@@ -6,9 +6,7 @@ import  MovieCards  from 'components/MovieCards';
 import  MovieDetails  from 'components/MovieDetails';
 
 export const Overview = () => {
-
     const [movies, setMovies] = useState([]);
-
     useEffect(() => {
         fetch(URL_MOVIES)
             .then(res  => res.json())
